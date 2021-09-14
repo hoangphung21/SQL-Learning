@@ -6,8 +6,8 @@ with CTE_Employees as(
 select FirstName, LastName,gender,Salary,
 count(gender) over(partition by gender) as totalgender,
 avg(salary) over(partition by gender) as averageSalary
-from SQLLearning..EmployeeDemograpics as emp
-join SQLLearning..EmpployeeSalary as sal
+from SQLLearning..EmployeeDemographics as emp
+join SQLLearning..EmployeeSalary as sal
 on emp.EmployeeID = sal.EmployeeID
 where Salary > 45000
 )
