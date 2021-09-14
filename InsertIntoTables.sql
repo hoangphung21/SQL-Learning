@@ -21,3 +21,13 @@ Insert Into SQLLearning.dbo.EmpployeeSalary VALUES
 (1007, 'Supplier Relations', 41000),
 (1008, 'Salesman', 48000),
 (1009, 'Accountant', 42000)
+
+-- adding new data
+Insert into SQLLearning..EmployeeDemograpics VALUES
+(1011, 'Ryan', 'Howard', 26, 'Male'),
+(NULL, 'Holly','Flax', NULL, 'Male'),
+(1013, 'Darryl', 'Philbin', NULL, 'Male')
+
+Insert into SQLLearning..EmpployeeSalary VALUES
+(1010, NULL, 47000),
+(NULL, 'Salesman', 43000)
